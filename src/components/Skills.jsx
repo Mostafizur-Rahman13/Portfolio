@@ -2,8 +2,6 @@ import { RiNextjsFill, RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
@@ -24,13 +22,13 @@ const iconVariants = (duration) => ({
 });
 
 
-
 const Skills = () => {
   return (
     <div className="border-b border-neutral-800 pb-24">
-      <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} transition={{ duration: 1.5, delay: 1 }} className="my-20 text-center text-4xl">Skills</motion.h2>
+      <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1.5 }} className="my-20 text-center text-4xl">Skills</motion.h2>
+      {/* whileInView={{ rotate: 360 }} transition={{ repeat: 1, duration: 0.5 }} */}
 
-      <motion.div whileInView={{ rotate: 360 }} transition={{ repeat: 1, duration: 0.5 }} className="flex flex-wrap items-center justify-center gap-4 ">
+      <motion.div className="flex flex-wrap items-center justify-center gap-4">
 
         {/* <div className="rounded-2xl border-4 border-neutral-800 p-4">
           <FaHtml5 className="text-7xl text-[#E45518]" />
@@ -38,7 +36,6 @@ const Skills = () => {
         <div className="rounded-2xl border-4 border-neutral-800 p-4">
           <FaCss3 className="text-7xl text-[#1C76B8]" />
         </div> */}
-
         <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
           <RiTailwindCssFill className="text-7xl text-[#38BDF8]" />
         </motion.div>

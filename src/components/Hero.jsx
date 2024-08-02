@@ -17,11 +17,11 @@ const Hero = () => {
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
 
-            <motion.h1 variants={container(0)} initial="hidden" animate="visible" className="uppercase pb-16 text-6xl font-thin tracking-tighter lg:mt-16 lg:text-7xl">Mostafizur Rahman</motion.h1>
+            <motion.h1 variants={container(0)} initial="hidden" animate="visible" className="uppercase pb-16 text-4xl font-thin tracking-tighter md:text-6xllg:mt-16 lg:text-7xl">Mostafizur Rahman</motion.h1>
 
             <motion.span variants={container(0.5)} initial="hidden" animate="visible" className="bg-gradient-to-r from-pink-600 via-slate-400 to-purple-500 bg-clip-text text-4xl tracking-tighter text-transparent">Full Stack Developer</motion.span>
 
-            <motion.p variants={container(1)} initial="hidden" animate="visible" className="my-2 mx-w-xl py-6 font-light tracking-tighter text-justify">{HERO_CONTENT}</motion.p>
+            <motion.p variants={container(1)} initial="hidden" animate="visible" className="my-2 mx-w-xl py-6 font-mono tracking-tighter text-justify">{HERO_CONTENT}</motion.p>
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex items-center justify-center lg:p-8">

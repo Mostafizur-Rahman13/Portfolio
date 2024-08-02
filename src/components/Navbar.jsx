@@ -2,6 +2,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const animateY = (delay) => ({
@@ -22,10 +23,12 @@ const Navbar = () => {
         {/* <img className='mx-2 w-10' src={logo} alt="" /> */}
       </div >
       <motion.div variants={animateY(1.1)} initial="hidden" animate="visible" className='m8 flex items-center justify-center gap-4 text-2xl'>
-        <FaLinkedin />
-        <FaGithub />
-        <FaSquareXTwitter />
-        <FaInstagram />
+        <a href="https://www.linkedin.com/in/mostafizur-rahman13"><FaLinkedin /></a>
+        <a href="https://github.com/Mostafizur-Rahman13"><FaGithub /></a>
+        <a href="https://www.twitter.com/mostafiz.tarek"><FaSquareXTwitter /></a>
+        <a href="https://www.facebook.com/mostafiz.tarek"><FaFacebook /></a>
+        <a href="https://www.instagram.com/mostafiz.tarek"><FaInstagram /></a>
+
       </motion.div>
     </nav >
   )
