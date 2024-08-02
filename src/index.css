@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Mochiy+Pop+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth !important;
+}
