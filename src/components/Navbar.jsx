@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className='flex flex-shink-0 items-center' >
         <motion.h2
           variants={animateY(0.5)} initial="hidden" animate="visible"
-          className='mx-2'>Mostafizur Rahman</motion.h2>
+          className='mx-2 text-2xl'>Mostafizur Rahman</motion.h2>
         {/* <img className='mx-2 w-10' src={logo} alt="" /> */}
       </div >
       <motion.div variants={animateY(1.1)} initial="hidden" animate="visible" className='m8 flex items-center justify-center gap-4 text-2xl'>
